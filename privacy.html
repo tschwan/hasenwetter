@@ -1,42 +1,59 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hasen Wetter – Datenschutzerklärung / Privacy Policy</title>
-<meta name="description" content="Datenschutzerklärung für Hasen Wetter / Privacy Policy for Bunny Weather">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        fontFamily: {
-          display: ['Poppins', 'sans-serif'],
-          body: ['Inter', 'sans-serif'],
-        },
-        colors: {
-          cream: '#FFF8F0',
-          bunny: {
-            orange: '#FF8A4C',
-            orangeDark: '#E8703A',
-            brown: '#4A3B32',
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hasen Wetter – Datenschutzerklärung / Privacy Policy</title>
+  <meta name="description" content="Datenschutzerklärung für Hasen Wetter / Privacy Policy for Bunny Weather">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Poppins', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            cream: '#FFF8F0',
+            bunny: {
+              orange: '#FF8A4C',
+              orangeDark: '#E8703A',
+              brown: '#4A3B32',
+            }
           }
         }
       }
     }
-  }
-</script>
-<style>
-  body { font-family: 'Inter', sans-serif; }
-  h1, h2, .font-display { font-family: 'Poppins', sans-serif; }
-  .lang-de [data-lang="en"] { display: none; }
-  .lang-en [data-lang="de"] { display: none; }
-</style>
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    h1,
+    h2,
+    .font-display {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .lang-de [data-lang="en"] {
+      display: none;
+    }
+
+    .lang-en [data-lang="de"] {
+      display: none;
+    }
+  </style>
 </head>
+
 <body class="lang-de bg-cream text-bunny-brown">
 
   <header class="max-w-3xl mx-auto px-6 pt-10 pb-4 flex items-center justify-between">
@@ -46,10 +63,8 @@
     </a>
 
     <div class="flex items-center gap-1 bg-white rounded-full shadow-sm p-1 text-sm font-medium">
-      <button id="btn-de" onclick="setLang('de')"
-        class="px-3 py-1.5 rounded-full transition-colors">DE</button>
-      <button id="btn-en" onclick="setLang('en')"
-        class="px-3 py-1.5 rounded-full transition-colors">EN</button>
+      <button id="btn-de" onclick="setLang('de')" class="px-3 py-1.5 rounded-full transition-colors">DE</button>
+      <button id="btn-en" onclick="setLang('en')" class="px-3 py-1.5 rounded-full transition-colors">EN</button>
     </div>
   </header>
 
@@ -81,8 +96,12 @@
         </div>
       </div>
       <p class="text-bunny-brown/90 leading-relaxed pl-9">
-        <span data-lang="de">Verantwortlich für die Datenverarbeitung im Sinne der DSGVO ist:<br>Thomas Schwan<br>E-Mail: <a href="mailto:tschwan.dev@gmail.com" class="text-bunny-orangeDark hover:underline">tschwan.dev@gmail.com</a></span>
-        <span data-lang="en">The data controller responsible for processing under the GDPR is:<br>Thomas Schwan<br>Email: <a href="mailto:tschwan.dev@gmail.com" class="text-bunny-orangeDark hover:underline">tschwan.dev@gmail.com</a></span>
+        <span data-lang="de">Verantwortlich für die Datenverarbeitung im Sinne der DSGVO ist:<br>Thomas
+          Schwan<br>E-Mail: <a href="mailto:tschwan.dev@gmail.com"
+            class="text-bunny-orangeDark hover:underline">tschwan.dev@gmail.com</a></span>
+        <span data-lang="en">The data controller responsible for processing under the GDPR is:<br>Thomas
+          Schwan<br>Email: <a href="mailto:tschwan.dev@gmail.com"
+            class="text-bunny-orangeDark hover:underline">tschwan.dev@gmail.com</a></span>
       </p>
     </section>
 
@@ -103,8 +122,14 @@
           </div>
         </div>
         <p class="text-bunny-brown/90 leading-relaxed pl-9">
-          <span data-lang="de">Wenn du den Standort freigibst, liest Bunny Weather deinen aktuellen Standort, um Wetterdaten für die Nähe abzurufen. Du kannst auch manuell nach einer Stadt suchen und die App ohne Standortfreigabe nutzen. Rechtsgrundlage für die Standortverarbeitung ist deine Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), die du über den Berechtigungsdialog erteilst und jederzeit widerrufen kannst.</span>
-          <span data-lang="en">If you allow location access, Bunny Weather reads your current location to fetch nearby weather conditions. You can also search for a city manually and use the app without granting location permission. The legal basis for processing your location is your consent (Art. 6(1)(a) GDPR), given via the system permission dialog and revocable at any time.</span>
+          <span data-lang="de">Wenn du den Standort freigibst, liest Bunny Weather deinen aktuellen Standort, um
+            Wetterdaten für die Nähe abzurufen. Du kannst auch manuell nach einer Stadt suchen und die App ohne
+            Standortfreigabe nutzen. Rechtsgrundlage für die Standortverarbeitung ist deine Einwilligung (Art. 6 Abs. 1
+            lit. a DSGVO), die du über den Berechtigungsdialog erteilst und jederzeit widerrufen kannst.</span>
+          <span data-lang="en">If you allow location access, Bunny Weather reads your current location to fetch nearby
+            weather conditions. You can also search for a city manually and use the app without granting location
+            permission. The legal basis for processing your location is your consent (Art. 6(1)(a) GDPR), given via the
+            system permission dialog and revocable at any time.</span>
         </p>
       </section>
 
@@ -123,8 +148,10 @@
           </div>
         </div>
         <p class="text-bunny-brown/90 leading-relaxed pl-9">
-          <span data-lang="de">Dein Standort wird nur verwendet, um Vorhersagen abzurufen, passende Ortsnamen anzuzeigen und das Wettererlebnis für deine ausgewählten Orte zu verbessern.</span>
-          <span data-lang="en">Your location is used only to request forecasts, display relevant place names, and improve the weather experience for the places you select.</span>
+          <span data-lang="de">Dein Standort wird nur verwendet, um Vorhersagen abzurufen, passende Ortsnamen anzuzeigen
+            und das Wettererlebnis für deine ausgewählten Orte zu verbessern.</span>
+          <span data-lang="en">Your location is used only to request forecasts, display relevant place names, and
+            improve the weather experience for the places you select.</span>
         </p>
       </section>
 
@@ -143,8 +170,14 @@
           </div>
         </div>
         <p class="text-bunny-brown/90 leading-relaxed pl-9">
-          <span data-lang="de">Gespeicherte Orte, App-Einstellungen und zwischengespeicherte Wetterdaten bleiben lokal auf deinem Gerät, damit die App schnell startet und auch ohne Netzwerkverbindung nützlich bleibt. Diese Daten verbleiben dort, bis du sie in der App löschst, den App-Speicher leerst oder die App deinstallierst – Bunny Weather überträgt sie an keiner Stelle an einen Server.</span>
-          <span data-lang="en">Saved places, app settings, and cached weather data are stored locally on your device so the app can reopen quickly and remain useful when the network is unavailable. This data stays there until you delete it inside the app, clear app storage, or uninstall the app — Bunny Weather never uploads it to a server.</span>
+          <span data-lang="de">Gespeicherte Orte, App-Einstellungen und zwischengespeicherte Wetterdaten bleiben lokal
+            auf deinem Gerät, damit die App schnell startet und auch ohne Netzwerkverbindung nützlich bleibt. Diese
+            Daten verbleiben dort, bis du sie in der App löschst, den App-Speicher leerst oder die App deinstallierst –
+            Bunny Weather überträgt sie an keiner Stelle an einen Server.</span>
+          <span data-lang="en">Saved places, app settings, and cached weather data are stored locally on your device so
+            the app can reopen quickly and remain useful when the network is unavailable. This data stays there until
+            you delete it inside the app, clear app storage, or uninstall the app — Bunny Weather never uploads it to a
+            server.</span>
         </p>
       </section>
 
@@ -163,8 +196,15 @@
           </div>
         </div>
         <p class="text-bunny-brown/90 leading-relaxed pl-9">
-          <span data-lang="de">Zum Abrufen von Wettervorhersagen werden deine Koordinaten an die Server von Open-Meteo (Schweiz) übermittelt. Ortssuche und Reverse-Geocoding laufen über die Standortdienste von Google Play Services, wodurch Standortdaten auch an Google übermittelt werden können. Es werden keine Konten oder Nutzerprofile bei diesen Diensten angelegt. Im aktuellen App-Code sind keine Werbe- oder Analytics-SDKs eingebunden.</span>
-          <span data-lang="en">To fetch forecasts, your coordinates are sent to Open-Meteo's servers (Switzerland). Place search and reverse geocoding rely on Google Play Services location services, which may also transmit location data to Google. No accounts or user profiles are created with these services. Bunny Weather does not include advertising or analytics SDKs in the current app code.</span>
+          <span data-lang="de">Zum Abrufen von Wettervorhersagen werden deine Koordinaten an die Server von Open-Meteo
+            (Schweiz) übermittelt. Ortssuche und Reverse-Geocoding laufen über die Standortdienste von Google Play
+            Services, wodurch Standortdaten auch an Google übermittelt werden können. Es werden keine Konten oder
+            Nutzerprofile bei diesen Diensten angelegt. Im aktuellen App-Code sind keine Werbe- oder Analytics-SDKs
+            eingebunden.</span>
+          <span data-lang="en">To fetch forecasts, your coordinates are sent to Open-Meteo's servers (Switzerland).
+            Place search and reverse geocoding rely on Google Play Services location services, which may also transmit
+            location data to Google. No accounts or user profiles are created with these services. Bunny Weather does
+            not include advertising or analytics SDKs in the current app code.</span>
         </p>
       </section>
 
@@ -183,12 +223,24 @@
           </div>
         </div>
         <p class="text-bunny-brown/90 leading-relaxed pl-9">
-          <span data-lang="de">Du kannst die Standortberechtigung jederzeit in den Android-Einstellungen entziehen, gespeicherte Orte in der App entfernen oder den App-Speicher in den Systemeinstellungen löschen. Da keine Daten an mich als Entwickler übermittelt oder auf einem Server gespeichert werden, kannst du diese Rechte vollständig selbst und sofort über dein Gerät ausüben, ohne dass eine Anfrage an mich nötig ist.</span>
-          <span data-lang="en">You can revoke location permission at any time in Android settings, remove saved places inside the app, or clear app storage from the system settings screen. Since no data is transmitted to me as the developer or stored on any server, you can exercise these rights fully and immediately on your own device, without needing to contact me.</span>
+          <span data-lang="de">Du kannst die Standortberechtigung jederzeit in den Android-Einstellungen entziehen,
+            gespeicherte Orte in der App entfernen oder den App-Speicher in den Systemeinstellungen löschen. Da keine
+            Daten an mich als Entwickler übermittelt oder auf einem Server gespeichert werden, kannst du diese Rechte
+            vollständig selbst und sofort über dein Gerät ausüben, ohne dass eine Anfrage an mich nötig ist.</span>
+          <span data-lang="en">You can revoke location permission at any time in Android settings, remove saved places
+            inside the app, or clear app storage from the system settings screen. Since no data is transmitted to me as
+            the developer or stored on any server, you can exercise these rights fully and immediately on your own
+            device, without needing to contact me.</span>
         </p>
         <p class="text-bunny-brown/90 leading-relaxed pl-9 mt-3">
-          <span data-lang="de">Darüber hinaus hast du nach der DSGVO grundsätzlich ein Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung sowie ein Beschwerderecht bei einer Datenschutz-Aufsichtsbehörde. Da Bunny Weather keine personenbezogenen Daten außerhalb deines Geräts verarbeitet, betreffen diese Rechte in der Praxis vor allem die oben genannten Drittanbieter.</span>
-          <span data-lang="en">Beyond that, under the GDPR you generally have the right to access, rectification, erasure, and restriction of processing, as well as the right to lodge a complaint with a data protection supervisory authority. Since Bunny Weather does not process personal data outside your device, these rights in practice mainly concern the third-party services listed above.</span>
+          <span data-lang="de">Darüber hinaus hast du nach der DSGVO grundsätzlich ein Recht auf Auskunft, Berichtigung,
+            Löschung, Einschränkung der Verarbeitung sowie ein Beschwerderecht bei einer Datenschutz-Aufsichtsbehörde.
+            Da Bunny Weather keine personenbezogenen Daten außerhalb deines Geräts verarbeitet, betreffen diese Rechte
+            in der Praxis vor allem die oben genannten Drittanbieter.</span>
+          <span data-lang="en">Beyond that, under the GDPR you generally have the right to access, rectification,
+            erasure, and restriction of processing, as well as the right to lodge a complaint with a data protection
+            supervisory authority. Since Bunny Weather does not process personal data outside your device, these rights
+            in practice mainly concern the third-party services listed above.</span>
         </p>
       </section>
 
@@ -203,8 +255,12 @@
           </div>
         </div>
         <p class="text-bunny-brown/90 leading-relaxed pl-9">
-          <span data-lang="de">Bunny Weather verlangt keine Registrierung und sammelt weder Namen noch E-Mail-Adressen oder andere Kontaktdaten von Nutzern. Es gibt keine Nutzerkonten und keine Möglichkeit, einzelne Personen anhand der App-Nutzung zu identifizieren.</span>
-          <span data-lang="en">Bunny Weather does not require sign-up and does not collect names, email addresses, or other contact details from users. There are no user accounts, and there is no way to identify individual people based on app usage.</span>
+          <span data-lang="de">Bunny Weather verlangt keine Registrierung und sammelt weder Namen noch E-Mail-Adressen
+            oder andere Kontaktdaten von Nutzern. Es gibt keine Nutzerkonten und keine Möglichkeit, einzelne Personen
+            anhand der App-Nutzung zu identifizieren.</span>
+          <span data-lang="en">Bunny Weather does not require sign-up and does not collect names, email addresses, or
+            other contact details from users. There are no user accounts, and there is no way to identify individual
+            people based on app usage.</span>
         </p>
       </section>
 
@@ -219,8 +275,10 @@
           </div>
         </div>
         <p class="text-bunny-brown/90 leading-relaxed pl-9">
-          <span data-lang="de">Bunny Weather richtet sich nicht gezielt an Kinder und ist nicht speziell für eine kindliche Zielgruppe gestaltet.</span>
-          <span data-lang="en">Bunny Weather is not directed at children and is not specifically designed for a child audience.</span>
+          <span data-lang="de">Bunny Weather richtet sich nicht gezielt an Kinder und ist nicht speziell für eine
+            kindliche Zielgruppe gestaltet.</span>
+          <span data-lang="en">Bunny Weather is not directed at children and is not specifically designed for a child
+            audience.</span>
         </p>
       </section>
 
@@ -235,8 +293,10 @@
           </div>
         </div>
         <p class="text-bunny-brown/90 leading-relaxed pl-9">
-          <span data-lang="de">Fragen zum Datenschutz? Schreib mir eine E-Mail an <a href="mailto:tschwan.dev@gmail.com" class="text-bunny-orangeDark hover:underline">tschwan.dev@gmail.com</a>.</span>
-          <span data-lang="en">Questions about privacy? Email me at <a href="mailto:tschwan.dev@gmail.com" class="text-bunny-orangeDark hover:underline">tschwan.dev@gmail.com</a>.</span>
+          <span data-lang="de">Fragen zum Datenschutz? Schreib mir eine E-Mail an <a href="mailto:tschwan.dev@gmail.com"
+              class="text-bunny-orangeDark hover:underline">tschwan.dev@gmail.com</a>.</span>
+          <span data-lang="en">Questions about privacy? Email me at <a href="mailto:tschwan.dev@gmail.com"
+              class="text-bunny-orangeDark hover:underline">tschwan.dev@gmail.com</a>.</span>
         </p>
       </section>
 
@@ -256,39 +316,40 @@
 
   </main>
 
-<script>
-  function setLang(lang) {
-    document.body.classList.remove('lang-de', 'lang-en');
-    document.body.classList.add('lang-' + lang);
-    document.documentElement.lang = lang;
-    localStorage.setItem('bunnyweather-privacy-lang', lang);
-    updateToggle(lang);
-  }
-
-  function updateToggle(lang) {
-    const de = document.getElementById('btn-de');
-    const en = document.getElementById('btn-en');
-    if (lang === 'de') {
-      de.className = 'px-3 py-1.5 rounded-full bg-bunny-orange text-white transition-colors';
-      en.className = 'px-3 py-1.5 rounded-full text-bunny-brown/60 transition-colors';
-    } else {
-      en.className = 'px-3 py-1.5 rounded-full bg-bunny-orange text-white transition-colors';
-      de.className = 'px-3 py-1.5 rounded-full text-bunny-brown/60 transition-colors';
+  <script>
+    function setLang(lang) {
+      document.body.classList.remove('lang-de', 'lang-en');
+      document.body.classList.add('lang-' + lang);
+      document.documentElement.lang = lang;
+      localStorage.setItem('bunnyweather-privacy-lang', lang);
+      updateToggle(lang);
     }
-  }
 
-  (function initLang() {
-    const saved = localStorage.getItem('bunnyweather-privacy-lang');
-    let lang;
-    if (saved === 'de' || saved === 'en') {
-      lang = saved;
-    } else {
-      const browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-      lang = browserLang.startsWith('de') ? 'de' : 'en';
+    function updateToggle(lang) {
+      const de = document.getElementById('btn-de');
+      const en = document.getElementById('btn-en');
+      if (lang === 'de') {
+        de.className = 'px-3 py-1.5 rounded-full bg-bunny-orange text-white transition-colors';
+        en.className = 'px-3 py-1.5 rounded-full text-bunny-brown/60 transition-colors';
+      } else {
+        en.className = 'px-3 py-1.5 rounded-full bg-bunny-orange text-white transition-colors';
+        de.className = 'px-3 py-1.5 rounded-full text-bunny-brown/60 transition-colors';
+      }
     }
-    setLang(lang);
-  })();
-</script>
+
+    (function initLang() {
+      const saved = localStorage.getItem('bunnyweather-privacy-lang');
+      let lang;
+      if (saved === 'de' || saved === 'en') {
+        lang = saved;
+      } else {
+        const browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+        lang = browserLang.startsWith('de') ? 'de' : 'en';
+      }
+      setLang(lang);
+    })();
+  </script>
 
 </body>
+
 </html>
